@@ -1,0 +1,18 @@
+#include <iostream> //короче это как import в жаве
+#include <cmath>
+using std::cin;
+using std::cout;
+using std::endl; //мы написали эту херь и теперь не обязательно каждый раз объявлять это. Спасибо using!
+
+int main()
+{
+    const int m_v_k = 1000;
+    int metr;
+    cout << "Input metr: ";
+    cin >> metr;
+    
+    const int km = metr/m_v_k;
+    const int m = metr%m_v_k;
+
+    cout << km << " km" << "\n" << m << " m";
+}
